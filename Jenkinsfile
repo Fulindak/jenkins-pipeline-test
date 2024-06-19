@@ -9,6 +9,7 @@ pipeline {
 
     environment {
         PYTHON_VENV = 'venv'
+        MY_PASSWORD = credentials('MY_PASSWORD')
     }
 
     options {
