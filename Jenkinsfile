@@ -35,15 +35,15 @@ pipeline {
                 }
                 //sh "python3 -m venv ${PYTHON_VENV}"
                 //sh "source ${PYTHON_VENV}/bin/activate && pip install -r requirements.txt"
-                sh "echo "устанавливаем зависимости""
+                sh "echo устанавливаем зависимости"
             }
         }
         
         stage('run') {
             steps {
                 //sh 'source venv/bin/activate && python hello.py --name ${STUDENT_NAME} > result.txt'
-                sh "echo "результат сборки cтудента ${STUDENT_NAME}""
-                sh "echo "результат сборки cтудента ${STUDENT_NAME}" > result.txt"
+                sh "echo результат сборки cтудента ${STUDENT_NAME}"
+                sh "echo результат сборки cтудента ${STUDENT_NAME} > result.txt"
             }
         }
         
