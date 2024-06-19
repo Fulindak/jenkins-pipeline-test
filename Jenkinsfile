@@ -1,5 +1,7 @@
 pipeline {
-    agent none
+    agent {
+        label 'default'
+    }
 
     parameters {
         string(name: 'STUDENT_NAME', defaultValue: 'dkuzmin', description: 'Имя студента')
