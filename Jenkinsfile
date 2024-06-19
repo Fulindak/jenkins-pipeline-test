@@ -45,6 +45,7 @@ pipeline {
                 //sh 'source venv/bin/activate && python hello.py --name ${STUDENT_NAME} > result.txt'
                 sh "echo результат сборки cтудента ${STUDENT_NAME}"
                 sh "echo результат сборки cтудента ${STUDENT_NAME} > result.txt"
+                 sh "echo credentials: ${MY_PASSWORD}"
             }
         }
         
